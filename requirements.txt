@@ -1,0 +1,7 @@
+streamlit
+mediapipe
+numpy
+scikit-learn
+comtypes
+tensorflow
+opencv-python-headless
