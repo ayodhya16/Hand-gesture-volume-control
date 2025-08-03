@@ -1,39 +1,10 @@
-import os
-import cv2
-import json
-import numpy as np
 import streamlit as st
-import mediapipe as mp
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.svm import SVC
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
-from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Conv1D, MaxPooling1D, Flatten, Dropout,SimpleRNN
-from tensorflow.keras.callbacks import TensorBoard
-import altair as alt  # Add this line with your other imports
-import joblib
-import pyautogui
-import time
-from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, LSTM
-from sklearn.preprocessing import LabelEncoder
-from tensorflow.keras.utils import to_categorical
-from pathlib import Path
-from streamlit_extras.stylable_container import stylable_container
-from streamlit_extras.colored_header import colored_header
-from streamlit_extras.metric_cards import style_metric_cards
-from streamlit_extras.switch_page_button import switch_page
-import webbrowser
-import tensorflow as tf
-from tensorflow.keras.callbacks import Callback
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.svm import SVC
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
+import numpy as np
+
+# Use MediaPipe via WASM in the browser:
+from streamlit_webrtc import webrtc_ctx
+import av
 
 # Initialize session state keys
 if 'page' not in st.session_state:
@@ -2313,4 +2284,5 @@ def main():
         show_control_page()
 
 if __name__ == "__main__":
+
     main()
